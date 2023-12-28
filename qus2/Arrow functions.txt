@@ -1,40 +1,42 @@
-//IIFE Function
+// Programs in Arrow functions
+
 
 //1.a Return odd numbers in array
 
-(function(arr){
+a=(arr)=>{
     for(let i=0;i<arr.length;i++){
         if(arr[i]%2!==0){
             console.log(arr[i]);
         }
     }
     return;
-})([1,2,3,4,5,6])
+}; let b=a([1,2,3,4,5,6]);
 
 //1.b Convert all the strings to title caps in a string array
 
-(function(x){
+a=(x)=>{
     for(let i=0;i<x.length;i++){
         x[i]=x[i].toUpperCase();
     }
     console.log(x)
     return;
-})(['eat','cap','tat'])
+}; let b=a(['eat','cap','tat']);
+
 
 //1.c Sum of all numbers in an array
 
-(function(arr){
+a=(arr)=>{
     let sum=0;
     for(let i=0;i<arr.length;i++){
     sum=sum+arr[i]
     }
     console.log(sum);
     return;
-})([1,2,3,4,5,6])
+}; let b=a([1,2,3,4,5,6]);
 
 //1.d Return all the Primenumbers
 
-(function(arr){
+a=(arr)=>{
     let s=[],n=0;
     for(let i=0;i<arr.length;i++){
         n=arr[i],j=2,count=0;
@@ -50,11 +52,11 @@
     }
     console.log(s)
     return;
-})([298,13,15,8])
+}; let b=a([298,13,15,8]);
 
 //1.e Return Palindrome
 
-(function(arr){
+a=(arr)=>{
     let s=[];
     for(let i=0;i<arr.length;i++){
     s=arr[i].split("");
@@ -65,35 +67,6 @@
     }
     }
     return;
-})(['dcd','cap'])
-
-//1.f Return Median
-
-(function(x,y){
-    let c=[].concat(x,y);
-    c.sort((a, b) => a - b);
-    let m=x.length;
-    console.log(c[m-1],c[m]);
-    return;
-})([13,15,8],[1,4,7])
-
-//1.g Remove duplicates from array
-
-(function(x){
-    return x.filter((item,index) => x.indexOf(item) === index);
-    console.log(x);
-})([13,8,15,8,21,13])
-
-//1.h Rotate an array by k times
-
-(function(nums, k) {
-
-  for (let i = 0; i < k; i++) {
-      nums.unshift(nums.pop());
-  }
-  console.log(nums);
-  return nums;
-})([1,2,3,4,5],2)
-
+}; let b=a(['dcd','cap']);
 
 
