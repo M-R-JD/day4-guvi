@@ -1,7 +1,7 @@
 // Programs in Arrow functions
 
 
-//1.a Return odd numbers in array
+//2.a Return odd numbers in array
 
 a=(arr)=>{
     for(let i=0;i<arr.length;i++){
@@ -12,7 +12,7 @@ a=(arr)=>{
     return;
 }; let b=a([1,2,3,4,5,6]);
 
-//1.b Convert all the strings to title caps in a string array
+//2.b Convert all the strings to title caps in a string array
 
 a=(x)=>{
     for(let i=0;i<x.length;i++){
@@ -23,7 +23,7 @@ a=(x)=>{
 }; let b=a(['eat','cap','tat']);
 
 
-//1.c Sum of all numbers in an array
+//2.c Sum of all numbers in an array
 
 a=(arr)=>{
     let sum=0;
@@ -34,7 +34,7 @@ a=(arr)=>{
     return;
 }; let b=a([1,2,3,4,5,6]);
 
-//1.d Return all the Primenumbers
+//2.d Return all the Primenumbers
 
 a=(arr)=>{
     let s=[],n=0;
@@ -54,7 +54,7 @@ a=(arr)=>{
     return;
 }; let b=a([298,13,15,8]);
 
-//1.e Return Palindrome
+//2.e Return Palindrome
 
 a=(arr)=>{
     let s=[];
