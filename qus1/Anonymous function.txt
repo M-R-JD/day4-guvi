@@ -1,0 +1,100 @@
+//Anonymous Function
+
+//1.a Sum of odd num in an array
+const a=function(arr){
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2!==0){
+            console.log(arr[i]);
+        }
+    }
+    return;
+};
+a([1,2,3,4,5,6])
+
+//1.b Convert all the strings to title caps in a string array
+
+const x=function(x){
+    for(let i=0;i<x.length;i++){
+        x[i]=x[i].toUpperCase();
+    }
+    console.log(x)
+    return;
+};x(['eat','cap','tat'])
+
+
+//1.c Sum of all numbers in an array
+
+const x=function(arr){
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+    sum=sum+arr[i]
+    }
+    console.log(sum);
+    return;
+};x([1,2,3,4,5,6])
+
+//1.d Return all the Primenumbers
+
+const x=function(arr){
+    let s=[],n=0;
+    for(let i=0;i<arr.length;i++){
+        n=arr[i],j=2,count=0;
+        while(j<=n){
+            if(n%j==0){
+                count=count+1;
+            }
+            j++;
+        }
+        if(count==1){
+            s.push(arr[i])
+        }
+    }
+    console.log(s)
+    return;
+};x([298,13,15,8])
+
+//1.e Return Palindrome
+
+const x=function(arr){
+    let s=[];
+    for(let i=0;i<arr.length;i++){
+    s=arr[i].split("");
+    s=s.reverse();
+    s=s.join("");
+    if(s==arr[i]){
+        console.log(s);
+    }
+    }
+    return;
+};x(['dcd','cap'])
+
+//1.f Return Median
+
+const x=function(x,y){
+    let c=[].concat(x,y);
+    c.sort((a, b) => a - b);
+    let m=x.length;
+    console.log(c[m-1],c[m]);
+    return;
+};x([13,15,8],[1,4,7])
+
+//1.g Remove duplicates from array
+
+const a=function(x){
+    return x.filter((item,index) => x.indexOf(item) === index);
+};console.log(a([13,8,15,8,21,13]))
+
+//1.h Rotate an array by k times
+
+const rotateArray1 = function(nums, k) {
+
+  for (let i = 0; i < k; i++) {
+      nums.unshift(nums.pop());
+  }
+
+  return nums;
+};console.log(rotateArray1([1,2,3,4,5],2));
+
+
+
+
